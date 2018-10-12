@@ -18,7 +18,7 @@ class App extends Component {
         <Route exact path="/projects" render={() => <Projects />} />
         <Route exact path="/teams" render={() => <Teams />} />
         <Route exact path="/employees" render={() => <Employees />} />
-        <Route render={() => <NotFound />} />
+        <Route exact path="" render={() => <NotFound />} />
       </Switch>
     );
   }
